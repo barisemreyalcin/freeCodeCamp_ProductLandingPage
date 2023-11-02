@@ -1,0 +1,280 @@
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+    background-color: #fff;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #1E371C;
+}
+
+h1, h2, h3, h4 {
+    color: #1E371C;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+button, #submit {
+    margin-top: 1em;
+    border: 1px solid #1E371C;
+    background-color: #7ef07e;
+    color: #1E371C;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: .75em 1.2em;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: transform .3s;
+}
+
+button:hover, #submit:hover {
+    transform: scale(1.04);
+}
+
+/* Header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7ef07e;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+}
+
+#header h1 {
+    display: flex;
+    align-items: center;
+    gap: .1em;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+#header-img {
+    width: 5rem;
+}
+
+#nav-bar ul {
+    display: flex;
+    gap: 2.5em;
+}
+
+.nav-link {
+    display: block;
+    font-size: 1.8rem;
+    transition: box-shadow .3s;
+}
+
+.nav-link:hover {
+    box-shadow: 0 2px #008356;
+}
+
+/* Main */
+
+/* Main - Header */
+
+main {
+    margin-top: 90px;
+    padding-top: 2em;
+}
+
+.main-header {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input {
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    border: 1px solid #1E371C;
+}
+
+#email {
+    padding: .5em;
+    width: 100%;
+}
+
+/* Main - Features */
+
+#features  {
+    margin-top: 5em;
+}
+
+.feature {
+    display: flex;
+    margin-bottom: 1.5em;
+}
+
+.feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+}
+
+.feature-icon i {
+    font-size: 3rem;
+    color: #008356;
+}
+
+.feature-text{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.feature-text h3{
+    font-size: 2.3rem;
+}
+
+.feature-text h3,
+.feature-text p {
+    margin: .25em 0;
+}
+
+/* Main - Showcase */
+
+#showcase {
+    text-align: center;
+    margin-top: 5em;
+}
+
+#showcase iframe {
+    max-width: 560px;
+    width: 100%;
+    height: 315px;
+}
+
+/* Main - Top Sneakers */
+
+#top-sneakers {
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5em;
+}
+
+.sneaker {
+    background-color: #131314;
+    padding: .4em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sneaker-img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.sneaker h4 {
+    color: #7ef07e;
+    font-size: 2rem;
+    margin: 1em 0;
+}
+
+.sneaker-features p {
+    color: #fff;
+    margin: .5em 0;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 700;
+    color: #008356;
+}
+
+.sneaker button {
+    margin-bottom: 1.5em;
+}
+
+/* Footer */
+footer {
+    background-color: #7ef07e;
+    margin-top: 5em;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5em;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    height: 90px;
+}
+
+@media(max-width: 768px) {
+    html {
+        font-size: 8.5px;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    #nav-bar {
+        margin: 0 auto;
+    }
+
+    #nav-bar ul {
+        gap: 2em;
+    }
+}
+
+@media(max-width: 576px) {
+    .sneaker, #submit {
+        width: 100%;
+    }
+
+    button {
+        width: 90%;
+    }
+}
+
+@media(max-width: 336px) {
+    main {
+        margin-top: 150px;
+    }
+}
